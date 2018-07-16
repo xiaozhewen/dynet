@@ -251,8 +251,9 @@ class build(_build):
                     # tfile.extractall('eigen')
                     log.info("Fetching Eigen...")
                     #urlretrieve(EIGEN3_DOWNLOAD_URL, "eigen.zip")
-                    #urlretrieve("/home/chaopengfei/cws/greedy_neural/b2e267dc99d4.zip", "eigen.zip")
+                    urlretrieve("/home/chaopengfei/cws/greedy_neural/b2e267dc99d4.zip", "eigen.zip")
                     #urlretrieve("/home/chaopengfei/cws/greedy_neural/b2e267dc99d4.zip", eigen.zip)
+                    
                     log.info("Unpacking Eigen...")
                     #BitBucket packages everything in a tarball with a changing root directory, so grab the only child
                     with zipfile.ZipFile("eigen.zip") as zfile:
